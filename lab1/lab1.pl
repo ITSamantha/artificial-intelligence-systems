@@ -1,5 +1,5 @@
 :- discontiguous 
-    videogame/1, genre/2, main_character/2, 
+    videogame/1, genre/2, main_character/2, age/2,
     rating/2, release_year/2, mechanic_type/3.
 
 % Название видеоигр.
@@ -49,6 +49,14 @@ release_year('Overwatch', 2016).
 release_year('Super Mario Bros', 1985).
 release_year('League of Legends', 2009).
 release_year('The Sims 3', 2009).
+
+% Возраст, с которого можно играть
+age('The Witcher 3: Wild Hunt', 18).
+age('Minecraft', 6).
+age('Overwatch', 16).
+age('Super Mario Bros', 5).
+age('League of Legends', 16).
+age('The Sims 3', 16).
 
 % Правило 1. Игра c высокой оценкой, если её рейтинг выше 8.5.
 well_rated(X) :-
