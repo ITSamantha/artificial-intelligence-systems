@@ -91,26 +91,26 @@ rating('Mortal Kombat 11', 8.8).
 rating('Assassin\'s Creed Valhalla', 8.2).
 
 % Механика и тип.
-mechanic('The Witcher 3: Wild Hunt', 'Open world', 'Single player').
-mechanic('Minecraft', 'Crafting', 'Multiplayer').
-mechanic('Overwatch', 'Team', 'Multiplayer').
-mechanic('Super Mario Bros', 'Side Scrolling', 'Single player').
-mechanic('League of Legends', 'Battle Arena', 'Multiplayer').
-mechanic('The Sims 3', 'Open World', 'Single player').
-mechanic('Red Dead Redemption 2', 'Open world', 'Single player').
-mechanic('The Legend of Zelda: Breath of the Wild', 'Open world', 'Single player').
-mechanic('Fortnite', 'Battle Royale', 'Multiplayer').
-mechanic('Call of Duty: Warzone', 'Battle Royale', 'Multiplayer').
-mechanic('Dark Souls III', 'Action RPG', 'Single player').
-mechanic('Grand Theft Auto V', 'Open world', 'Single player').
-mechanic('FIFA 22', 'Sports', 'Multiplayer').
-mechanic('Cyberpunk 2077', 'Action RPG', 'Single player').
-mechanic('Resident Evil Village', 'Survival Horror', 'Single player').
-mechanic('The Elder Scrolls V: Skyrim', 'Action RPG', 'Single player').
-mechanic('Halo Infinite', 'First-Person Shooter', 'Multiplayer').
-mechanic('Among Us', 'Social Deduction', 'Multiplayer').
-mechanic('Mortal Kombat 11', 'Fighting', 'Multiplayer').
-mechanic('Assassin\'s Creed Valhalla', 'Action-Adventure', 'Single player').
+mechanic_type('The Witcher 3: Wild Hunt', 'Open world', 'Single player').
+mechanic_type('Minecraft', 'Crafting', 'Multiplayer').
+mechanic_type('Overwatch', 'Team', 'Multiplayer').
+mechanic_type('Super Mario Bros', 'Side Scrolling', 'Single player').
+mechanic_type('League of Legends', 'Battle Arena', 'Multiplayer').
+mechanic_type('The Sims 3', 'Open World', 'Single player').
+mechanic_type('Red Dead Redemption 2', 'Open world', 'Single player').
+mechanic_type('The Legend of Zelda: Breath of the Wild', 'Open world', 'Single player').
+mechanic_type('Fortnite', 'Battle Royale', 'Multiplayer').
+mechanic_type('Call of Duty: Warzone', 'Battle Royale', 'Multiplayer').
+mechanic_type('Dark Souls III', 'Action RPG', 'Single player').
+mechanic_type('Grand Theft Auto V', 'Open world', 'Single player').
+mechanic_type('FIFA 22', 'Sports', 'Multiplayer').
+mechanic_type('Cyberpunk 2077', 'Action RPG', 'Single player').
+mechanic_type('Resident Evil Village', 'Survival Horror', 'Single player').
+mechanic_type('The Elder Scrolls V: Skyrim', 'Action RPG', 'Single player').
+mechanic_type('Halo Infinite', 'First-Person Shooter', 'Multiplayer').
+mechanic_type('Among Us', 'Social Deduction', 'Multiplayer').
+mechanic_type('Mortal Kombat 11', 'Fighting', 'Multiplayer').
+mechanic_type('Assassin\'s Creed Valhalla', 'Action-Adventure', 'Single player').
 
 % Факты о годе выпуска видеоигр.
 release_year('The Witcher 3: Wild Hunt', 2015).
@@ -174,7 +174,7 @@ belongs_to_genre(X, Y) :-
 
 % Правило 5. Игра X поддерживает определенный тип игры Y.
 supports_game_mode(X, Y) :-
-   mechanic(X, _, Y).
+   mechanic_type(X, _, Y).
 
 % Правило 6. Получить список всех высоко оцененных игр
 list_of_well_rated_games(WellRatedGames) :-
