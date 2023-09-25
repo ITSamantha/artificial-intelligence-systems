@@ -31,7 +31,66 @@
 
 Видеоигры.
 
+### Реализация
+**Факты**
+- videogame/1
+- genre/2
+- main_character/2
+- age/2
+- rating/2
+- release_year/2
+- mechanic_type/3
+
+**Правила**
+- % Правило 1. Игра c высокой оценкой, если её рейтинг выше 8.5.
+well_rated(X) :-
+   rating(X, Rating), Rating > 8.5.
+
+- % Правило 2. Список всех видеоигр.
+list_of_video_games(Games) :- 
+   findall(Game, videogame(Game), Games).
+
+- % Правило 3. Игра является "старой", если она была выпущена до 2010 года.
+old_game(X) :-
+   \+ release_year(X, Year), Year > 2010.
+
+- % Правило 4. Игра X принадлежит к определенному жанру Y.
+belongs_to_genre(X, Y) :-
+   genre(X, Y).
+
+- % Правило 5. Игра X поддерживает определенный тип игры Y.
+supports_game_mode(X, Y) :-
+   mechanic_type(X, _, Y).
+
+- % Правило 6. Получить список всех высоко оцененных игр
+list_of_well_rated_games(WellRatedGames) :-
+   findall(Game, well_rated(Game), WellRatedGames).
+
+- % Правило 7. Получить список игр определенного жанра.
+games_of_genre(Genre, Games) :-
+   findall(Game, (genre(Game, Genre)), Games).
+
+- % Правило 8. Список игр, рекомендуемых для взрослых (18+).
+games_for_adults(Games) :-
+   findall(Game, (videogame(Game), age(Game, Age), Age >= 18), Games).
+
+- % Правило 9. Список игр, которые считаются "классикой". "Классические игры" - это те, которые были выпущены более 20 лет назад и имеют высокий рейтинг.
+classic_games(Games) :-
+   findall(Game, (videogame(Game), release_year(Game, Year), Year =< 2003, well_rated(Game)), Games).
+
 ### Информация о фактах и правилах
 - **20** фактов с одним параметром
 - **Ооочень много** фактов с двумя параметрами
 - **9** правил
+
+### Тесты
+- well_rated('Super Mario Bros').
+- well_rated('The Witcher 3: Wild Hunt').
+- list_of_video_games(Games).
+- old_game('The Sims 3').
+- old_game('Minecraft').
+- belongs_to_genre('The Witcher 3: Wild Hunt', 'RPG').
+- belongs_to_genre('The Witcher 3: Wild Hunt', 'RP').
+- supports_game_mode('The Witcher 3: Wild Hunt', 'Single player').
+- supports_game_mode('The Witcher 3: Wild Hunt', 'Single').
+- list_of_well_rated_games(WellRatedGames).
