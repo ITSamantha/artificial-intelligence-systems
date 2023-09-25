@@ -33,13 +33,13 @@
 
 ### Реализация
 **Факты**
-- videogame/1
-- genre/2
-- main_character/2
-- age/2
-- rating/2
-- release_year/2
-- mechanic_type/3
+- videogame/1 - Название видеоигры
+- genre/2 - Жанр
+- main_character/2 - Главный герой
+- age/2 - Возраст
+- rating/2 - Рейтинг
+- release_year/2 - Год выпуска
+- mechanic_type/3 - Механика и тип
 
 **Правила**
 - % Правило 1. Игра c высокой оценкой, если её рейтинг выше 8.5.
