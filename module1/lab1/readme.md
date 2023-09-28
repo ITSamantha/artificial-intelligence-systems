@@ -32,14 +32,17 @@
 Видеоигры.
 
 ### Реализация
-**Факты**
-- videogame/1 - Название видеоигры
-- genre/2 - Жанр
-- main_character/2 - Главный герой
-- age/2 - Возраст
-- rating/2 - Рейтинг
-- release_year/2 - Год выпуска
-- mechanic_type/3 - Механика и тип
+**Факты базы знаний**
+   |     Факт     |         |              Описание                  |
+   |:----------------------:|:--------------------------------------:|
+   | videogame(X)           | X - видеоигра                          |
+   | genre(X, Y)            | Y - жанр видеоигры X                   |
+   | main_character(X, Y)   | Y - главный герой видеоигры X          |
+   | age(X, Y)              | Для игры X установлен лимит возраста Y |
+   | rating(X, Y)           | Для игры X установлен рейтинг Y        |
+   | release_year(X, Y)     | Игра X выпущена в Y году               |
+   | mechanic_type(X, Y, Z) | У игры X механика Y и тип Z            |
+
 
 **Правила**
 - % Правило 1. Игра c высокой оценкой, если её рейтинг выше 8.5.
@@ -83,14 +86,18 @@ classic_games(Games) :-
 - **Ооочень много** фактов с двумя параметрами
 - **9** правил
 
-### Тесты
-- well_rated('Super Mario Bros').
-- well_rated('The Witcher 3: Wild Hunt').
-- list_of_video_games(Games).
-- old_game('The Sims 3').
-- old_game('Minecraft').
-- belongs_to_genre('The Witcher 3: Wild Hunt', 'RPG').
-- belongs_to_genre('The Witcher 3: Wild Hunt', 'RP').
-- supports_game_mode('The Witcher 3: Wild Hunt', 'Single player').
-- supports_game_mode('The Witcher 3: Wild Hunt', 'Single').
-- list_of_well_rated_games(WellRatedGames).
+### Тесты (Запросы к базе знаний)
+- well_rated('Super Mario Bros').  | no
+- well_rated('The Witcher 3: Wild Hunt').  | yes
+- list_of_video_games(Games).  | Games = ['The Witcher 3: Wild Hunt','Minecraft','Overwatch','Super Mario Bros','League of Legends','The Sims 3','Red Dead Redemption 2','The Legend of Zelda: Breath of the Wild','Fortnite','Call of Duty: Warzone','Dark Souls III','Grand Theft Auto V','FIFA 22','Cyberpunk 2077','Resident Evil Village','The Elder Scrolls V: Skyrim','Halo Infinite','Among Us','Mortal Kombat 11','Assassin''s Creed Valhalla']
+- old_game('The Sims 3').  | no
+- old_game('Minecraft').  | no
+- belongs_to_genre('The Witcher 3: Wild Hunt', 'RPG').  | yes
+- belongs_to_genre('The Witcher 3: Wild Hunt', 'RP').  | no
+- supports_game_mode('The Witcher 3: Wild Hunt', 'Single player').  | yes
+- supports_game_mode('The Witcher 3: Wild Hunt', 'Single').  | no
+- list_of_well_rated_games(WellRatedGames).   |WellRatedGames = ['The Witcher 3: Wild Hunt','Minecraft','League of Legends','The Sims 3','Red Dead Redemption 2','The Legend of Zelda: Breath of the Wild','Dark Souls III','Grand Theft Auto V','The Elder Scrolls V: Skyrim','Mortal Kombat 11']
+
+  
+### Вывод
+В ходе лабораторной работы я научилась логическому программированию на языке Prolog. Оперируя фактами (объекты и отношения между ними), я создала базу знаний. После чего я определила некоторые правила, благодаря которым смога порождать новые факты на основе имеющихся.
