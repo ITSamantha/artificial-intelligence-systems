@@ -86,17 +86,25 @@ classic_games(Games) :-
 - **Ооочень много** фактов с двумя параметрами
 - **9** правил
 
+   |   Элемент базы знаний     |              Количество                |
+   |:-------------------------:|:--------------------------------------:|
+   | Факты с одним аргументом  | 20                                     |
+   | Факты с двумя аргументами | 100                                    |
+   | Факты с тремя аргументами | 20                                     |
+   | Правила                   | 9                                      |
+
 ### Тесты (Запросы к базе знаний)
-- well_rated('Super Mario Bros').  | no
-- well_rated('The Witcher 3: Wild Hunt').  | yes
-- list_of_video_games(Games).  | Games = ['The Witcher 3: Wild Hunt','Minecraft','Overwatch','Super Mario Bros','League of Legends','The Sims 3','Red Dead Redemption 2','The Legend of Zelda: Breath of the Wild','Fortnite','Call of Duty: Warzone','Dark Souls III','Grand Theft Auto V','FIFA 22','Cyberpunk 2077','Resident Evil Village','The Elder Scrolls V: Skyrim','Halo Infinite','Among Us','Mortal Kombat 11','Assassin''s Creed Valhalla']
-- old_game('The Sims 3').  | no
-- old_game('Minecraft').  | no
-- belongs_to_genre('The Witcher 3: Wild Hunt', 'RPG').  | yes
-- belongs_to_genre('The Witcher 3: Wild Hunt', 'RP').  | no
-- supports_game_mode('The Witcher 3: Wild Hunt', 'Single player').  | yes
-- supports_game_mode('The Witcher 3: Wild Hunt', 'Single').  | no
-- list_of_well_rated_games(WellRatedGames).   |WellRatedGames = ['The Witcher 3: Wild Hunt','Minecraft','League of Legends','The Sims 3','Red Dead Redemption 2','The Legend of Zelda: Breath of the Wild','Dark Souls III','Grand Theft Auto V','The Elder Scrolls V: Skyrim','Mortal Kombat 11']
+   |   Запрос     |              Результат                |
+   |:------------------------------------------------------------------:|:--------------------------------------:|
+   | well_rated('Super Mario Bros').                                    | no                                     |
+   | well_rated('The Witcher 3: Wild Hunt').                            | yes                                    |
+   | list_of_video_games(Games).                                        | Games = ['The Witcher 3: Wild Hunt','Minecraft',...]         |
+   | old_game('The Sims 3').                                            |  no                                    |
+   | old_game('Minecraft').                                             |  no                                    |
+   | belongs_to_genre('The Witcher 3: Wild Hunt', 'RPG').               | no                                     |
+   | supports_game_mode('The Witcher 3: Wild Hunt', 'Single player').   |  yes                                   |
+   | supports_game_mode('The Witcher 3: Wild Hunt', 'Single').          |  no                                    |
+   | list_of_well_rated_games(WellRatedGames).                          | WellRatedGames = ['The Witcher 3: Wild  Hunt','Minecraft',...] |
 
   
 ### Вывод
