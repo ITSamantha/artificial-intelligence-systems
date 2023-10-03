@@ -19,24 +19,30 @@
 Для реализации линейной регресиии был выбран "Матричный метод". Он заключается в нахождении вектора параметров регресии B = (X'X)^(-1)X'Y. Функция нахождения коэффиицента детерминации (R2) также реализована. Был введен синтетический признак в качестве PCA (слияние двух наиболее коррелированных признаков) - bedrooms_households. Были построены модели с различными параметрами (параметры на каждом шаге выбираются рандомно, что позволяет оценить больший спектр моделей). 
 
 ### Примеры работы
+
 - Описание датасета:
+  
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/38530f9c-a960-4f7b-bd8a-3a9c7726c2b0)
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/6e2d0169-180d-49f7-90cd-59aed5c53897)
 
 - Описание статистики атрибута:
+  
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/4e747427-a03b-4f4c-935d-4db293f1f68d)
 
 - Предварительная обработка данных
+  
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/c060c474-a3be-4711-8d5f-92cc607f5d9d)
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/6e0e8c5f-eb63-4057-a67d-809b1b6cdbe4)
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/aee759c7-7fe6-455c-9a29-9498d5ab842c)
 
 - Модели
+  
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/d9e5d14e-ecea-4976-8973-3ee65cecffd7)
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/9dd3003f-f149-47ef-b3c3-c0b12f91c07e)
 ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/888922a3-88ab-424d-a440-adf95803cd0e)
 
 ### Визуализация данных
+
 ![boxplots](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/02d74956-3033-40ea-a26e-5ed1a36e0542)
 ![heat_map](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/a95c32ab-39c1-426f-a53a-923e60a66e20)
 
