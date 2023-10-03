@@ -1,6 +1,6 @@
-:- discontiguous 
-    videogame/1, genre/2, main_character/2, age/2,
-    rating/2, release_year/2, mechanic_type/3.
+%:- discontiguous 
+%    videogame/1, genre/2, main_character/2, age/2,
+%    rating/2, release_year/2, mechanic_type/3.
 
 % Название видеоигр.
 videogame('The Witcher 3: Wild Hunt').
