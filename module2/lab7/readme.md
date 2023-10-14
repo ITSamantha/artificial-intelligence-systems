@@ -34,4 +34,54 @@
 - Для нахождения наилучших параметров было решено запустить цикл с переборами всех параметров, лучшие показатели были выявлены в ходе работы программы.
 - Написана также версия с использованием библиотеки sklearn.
 
-  ### Примеры работы
+## Примеры работы
+
+Ниже расположены возможные варианты использования приложения.
+
+- Описание датасета:
+
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/153adc0f-918c-448d-8f07-0de9a73db557)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/cdc0044b-fd2b-4bd5-9d66-b939c4118dc3)
+
+- Описание статистики атрибутов:
+
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/b7c4892b-d139-414a-86c7-c92f46934c9f)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/0ebea341-ec1d-4cd1-9a84-c6c0d6e7aca1)
+
+- Предварительная обработка данных
+
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/a8142168-5c6b-4e6a-bcfa-b797491fb140)
+
+- Перебор возможных параметров для выявления лучших:
+  
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/6ad33ffa-6364-42b2-a325-5e3f84296f29)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/208bad0d-b2d3-4b31-b8a7-47b3cf0da9de)
+
+- Лучшие параметры:
+
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/ba6ff719-f743-4afe-b924-50b9411df60d)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/d7edbace-7d54-4529-9f91-96f09a19528c)
+
+### Визуализация данных
+
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/9046f47b-c6a9-4964-b0e8-b34868425773)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/42be7981-d0fa-4fef-9776-86a402b41920)
+
+## Вывод
+В ходе работы я научилась анализировать и визуализировать датасет, проводить предварительную обратботку данных, включая обработку отсутствующих значений, кодирование категориальных признаков и нормировку. Также я реализовала метод логистической регрессии средствами языка Python и библиотек NumPy и Pandas. Были построены модели с различными параметрами. Выбрана модель с наилучшими показателями производительности. При варьировании гиперпараметров возникали различные ситуации, соответственно, различные метрики выходили. Ниже расположены фото наиболее удачных моделей. Однако, стоит заметить, что метод градиентного спуска давал различные результаты в течение работы. В отличие от него, метод оптимизации Ньютона всегда давал приблизительно равные значения, был более стаблильным.
+
+![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/9b2e5384-eadf-4b0d-bc0a-a19c74823bc7)
+![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/89e938d4-2e94-4ea2-b062-e4fe80012b3a)
+
+
+**Лучшими показателями для данного датасета оказались (метод Градиентного спуска): **
+- Количество итераций: 1000
+- Learning rate: 0.5
+- Accurancy: 0.824
+- Метод: Градиентного спуска
+
+**Лучшими показателями для данного датасета оказались (метод Ньютона): **
+- Количество итераций: 500
+- Learning rate: -
+- Accurancy: 0.805
+- Метод: Оптимизации Ньютона
