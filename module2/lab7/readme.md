@@ -72,11 +72,11 @@
 
 # Лучшие параметры реализованной библиотеки
 
-    ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/9b2e5384-eadf-4b0d-bc0a-a19c74823bc7)
-    ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/ba6ff719-f743-4afe-b924-50b9411df60d)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/9b2e5384-eadf-4b0d-bc0a-a19c74823bc7)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/ba6ff719-f743-4afe-b924-50b9411df60d)
 
 # Лучшие параметры sklearn
-    ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/efb8e5e7-cb82-4b2b-950c-e78cd01ed8cc)
+  ![image](https://github.com/ITSamantha/Artificial_Intelligence_Systems/assets/100091168/efb8e5e7-cb82-4b2b-950c-e78cd01ed8cc)
 
 
 **Лучшими показателями для данного датасета оказались (метод Градиентного спуска): **
