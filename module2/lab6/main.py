@@ -4,7 +4,6 @@ import pandas as pd
 from library import *
 from preprocessing import *
 from dataset_description import *
-from sklearn.metrics import  roc_auc_score
 DATASET_PATH = 'dataset/mushrooms.csv'
 TARGET_COLUMN = 'poisonous'
 
