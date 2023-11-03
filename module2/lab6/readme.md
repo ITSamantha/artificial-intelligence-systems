@@ -68,18 +68,22 @@
 - Результаты:
 
   1. При отобранных признаках (gill-size, stalk-color-above-ring, cap-shape, gill-attachment):
+     
     ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/3b9be2ab-fbd6-4521-8335-055d3bbd7a17)
 
-  2. При отобранных признаках (habitat, gill-color, stalk-surface-below-ring, gill-attachment):
+  3. При отобранных признаках (habitat, gill-color, stalk-surface-below-ring, gill-attachment):
+     
      ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/df58fca0-1cca-479b-9394-9a80f57cb4ff)
 
 
 ### Визуализация данных
 
   - AUC-ROC:
+    
   ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/b142d007-5ad5-48e6-8b5f-3853ef5c53d2)
 
   - AUC-PR:
+    
   ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/bc3fec9c-4625-40f5-9301-a3a3749216ab)
 
 
