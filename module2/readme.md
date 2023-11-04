@@ -96,10 +96,14 @@
 
    *Производительность модели, обученной по данному алгоритму, является значением модели со средним уровнем обученности для задачи данных о диабете (0.8-0.85).*
 
-Точность классификации:
+*Точность классификации:*
+
 ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/a509b425-e591-401f-92fa-74e74a5b31cd)
-Время обучения:
+
+*Время обучения:*
+
 ![image](https://github.com/ITSamantha/artificial_intelligence_systems/assets/100091168/187fefdc-e693-484d-8fd1-638f72b402db)
+
 *_http://www.vestnik.vsu.ru/pdf/analiz/2018/03/2018-03-19.pdf_
 
 ## Примеры лучшего использования каждого метода
